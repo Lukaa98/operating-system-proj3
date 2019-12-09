@@ -1,15 +1,15 @@
 import java.util.Scanner;
 /*
-* MultithreadDemo class implements runnable
+* PerfectNumber class implements runnable
 */
-public class MultithreadDemo implements Runnable{
+public class PerfectNumber implements Runnable{
    private static int sum=1, index;
    private static int[] factorials ;
    private static int num;
    private int [] imputNums;
    private static int partitionNo=0;
 
-   public MultithreadDemo(int [] imputNums){
+   public PerfectNumber(int [] imputNums){
        this.imputNums = imputNums;
    }
 
@@ -50,7 +50,7 @@ public class MultithreadDemo implements Runnable{
                }
                partitionNo++;
 
-               Thread object = new Thread(new MultithreadDemo(imputNums));
+               Thread object = new Thread(new PerfectNumber(imputNums));
    object.start();
    try {
                    object.join();
