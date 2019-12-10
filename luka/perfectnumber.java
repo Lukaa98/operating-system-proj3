@@ -32,17 +32,18 @@ private static ArrayList<Integer> factors = new ArrayList<>();
   // sort the factors in ascending oorder (optional)
   Collections.sort(factors);
   if (result == 0) {
-    System.out.print(number + " is a PerfectNumber and its factors are ");
+    System.out.print( " 0.  its factors and sum are ");
       for(int i = 0; i < factors.size(); i++)
        {
           if(i == factors.size() - 1)
           System.out.println(factors.get(i));
            else
-            System.out.print(factors.get(i) + ", ");
+            System.out.print(factors.get(i) + " + ");
             }
+            System.out.print(" = " +number);
           }
        if (result != 0) {
-     System.out.println("it is not a PerfectNumber (1)");
+     System.out.println("1");
   }
 }
 
